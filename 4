@@ -7,4 +7,4 @@ public List<List<String>> groupAnagrams(String[] strs) {
         map.computeIfAbsent(key, k -> new ArrayList<>()).add(str);
     }
     return new ArrayList<>(map.values());
-}
+} 
