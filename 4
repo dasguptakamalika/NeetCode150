@@ -4,7 +4,7 @@ public List<List<String>> groupAnagrams(String[] strs) {
         char[] chars = str.toCharArray();
         Arrays.sort(chars);                 // sort characters to form a key
         String key = new String(chars);
-        map.computeIfAbsent(key, k -> new ArrayList<>()).add(str);
+        map.computeIfAbsent(key, k -> new ArrayList<>()).add(str); 
     }
     return new ArrayList<>(map.values());
 } 
