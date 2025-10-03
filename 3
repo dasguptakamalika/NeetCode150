@@ -6,7 +6,7 @@
             int j = map.get(complement);
             return new int[]{Math.min(i, j), Math.max(i, j)};
         }
-        map.put(nums[i], i);
+        map.put(nums[i], i); 
     }
     return new int[]{}; // should never happen per problem statement
 }
