@@ -6,7 +6,7 @@ public boolean isAnagram(String s, String t) {
         count[s.charAt(i) - 'a']++;
         count[t.charAt(i) - 'a']--;
     }
-  
+   
     for (int c : count) {
         if (c != 0) return false; 
     } 
